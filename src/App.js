@@ -3,6 +3,9 @@ import { randomSrvc } from "./service/service";
 // import { useDispatch, useSelector } from "react-redux";
 import { randomSuccess } from "./redux/action/randomAct";
 import { useState } from "react";
+import { BsPerson } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
+import { GrLocation } from "react-icons/gr";
 
 function App() {
   const [pict, setpict] = useState("");
@@ -31,9 +34,24 @@ function App() {
           <img src={pict} alt=""></img>
         </div>
         <div className="data">
-          <h4 className="nama">{nama}</h4>
-          <h4 className="email">{email}</h4>
-          <h4 className="alamat">{alamat}</h4>
+          <div className="container">
+            <h4>
+              <BsPerson />
+            </h4>
+            <h4 className="nama">{nama}</h4>
+          </div>
+          <div className="container">
+            <h4>
+              <FiMail />
+            </h4>
+            <h4 className="email">{email}</h4>
+          </div>
+          <div className="container">
+            <h4>
+              <GrLocation />
+            </h4>
+            <h4 className="alamat">{alamat}</h4>
+          </div>
         </div>
         <button onClick={handleClick}>next</button>
       </div>

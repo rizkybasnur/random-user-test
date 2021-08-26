@@ -1,0 +1,42 @@
+.App {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+
+  background-color: whitesmoke;
+  .App-header {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    .pict {
+      border-radius: 50%;
+    }
+    .data {
+      display: flex;
+      justify-content: center;
+      h4 {
+        margin-right: 5px;
+      }
+    }
+    button {
+      width: 150px;
+      height: 50px;
+      border: transparent;
+      background-color: #5cb85c;
+      color: black;
+      border-radius: 3px;
+    }
+  }
+}

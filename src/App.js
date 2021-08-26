@@ -34,26 +34,28 @@ function App() {
           <img src={pict} alt=""></img>
         </div>
         <div className="data">
-          <div className="container">
+          <div className="containerNama">
             <h4>
               <BsPerson />
             </h4>
             <h4 className="nama">{nama}</h4>
           </div>
-          <div className="container">
+          <div className="containerEmail">
             <h4>
               <FiMail />
             </h4>
             <h4 className="email">{email}</h4>
           </div>
-          <div className="container">
+          <div className="containerAlamat">
             <h4>
               <GrLocation />
             </h4>
             <h4 className="alamat">{alamat}</h4>
           </div>
         </div>
-        <button onClick={handleClick}>next</button>
+        <button onClick={handleClick}>
+          {pict === "" ? "Generate" : "Next"}
+        </button>
       </div>
     </div>
   );

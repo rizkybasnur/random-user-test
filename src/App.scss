@@ -34,12 +34,38 @@
     .data {
       display: flex;
       justify-content: center;
-      .container {
-        margin-top: 50px;
+      margin-top: 30px;
+      .containerNama {
+        // margin-top: 50px;
         text-align: center;
         align-items: center;
+        border-right: solid 1px black;
+
+        padding-right: 15px;
+
         h4 {
-          margin-right: 25px;
+          font-weight: 100;
+        }
+      }
+      .containerEmail {
+        // margin-top: 50px;
+        text-align: center;
+        align-items: center;
+        border-right: solid 1px black;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        h4 {
+          font-weight: 100;
+        }
+      }
+      .containerAlamat {
+        // margin-top: 50px;
+        text-align: center;
+        align-items: center;
+        margin-left: 15px;
+        // border: solid 1px black;
+        h4 {
           font-weight: 100;
         }
       }

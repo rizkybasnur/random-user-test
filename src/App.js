@@ -33,26 +33,30 @@ function App() {
         <div className="pict">
           <img src={pict} alt=""></img>
         </div>
-        <div className="data">
-          <div className="containerNama">
-            <h4>
-              <BsPerson />
-            </h4>
-            <h4 className="nama">{nama}</h4>
-          </div>
-          <div className="containerEmail">
-            <h4>
-              <FiMail />
-            </h4>
-            <h4 className="email">{email}</h4>
-          </div>
-          <div className="containerAlamat">
-            <h4>
-              <GrLocation />
-            </h4>
-            <h4 className="alamat">{alamat}</h4>
-          </div>
-        </div>
+        <>
+          {pict === "" ? null : (
+            <div className="data">
+              <div className="containerNama">
+                <h4>
+                  <BsPerson />
+                </h4>
+                <h4 className="nama">{nama}</h4>
+              </div>
+              <div className="containerEmail">
+                <h4>
+                  <FiMail />
+                </h4>
+                <h4 className="email">{email}</h4>
+              </div>
+              <div className="containerAlamat">
+                <h4>
+                  <GrLocation />
+                </h4>
+                <h4 className="alamat">{alamat}</h4>
+              </div>
+            </div>
+          )}
+        </>
         <button onClick={handleClick}>
           {pict === "" ? "Generate" : "Next"}
         </button>
